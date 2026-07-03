@@ -6,6 +6,9 @@ on:
       - v5
   workflow_dispatch:
 
+env:
+  THEME_NAME: catppuccin
+
 permissions:
   contents: read
   deployments: write
@@ -48,7 +51,8 @@ jobs:
 
       - name: Check types and style
         run: npm run check
-
+      - name: Fetch Quartz Theme
+        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $catppuccin
       - name: Build Quartz
         run: npx quartz build -d docs -v
 

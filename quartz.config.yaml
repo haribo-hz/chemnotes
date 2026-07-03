@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-GB
-  baseUrl: haribo-hz.github.io
+  baseUrl: chemnotes.pages.dev
   ignorePatterns:
     - private
     - templates
@@ -31,13 +31,13 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#1e2030"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#b8c0e0"
-        dark: "#cad3f5"
-        secondary: "#a6da95"
-        tertiary: "#8bd5ca"
+        light: blue
+        lightgray: blue
+        gray: blue
+        darkgray: blue
+        dark: blue
+        secondary: blue
+        tertiary: blue
         highlight: rgba(183, 189, 248, 0.15)
         textHighlight: rgba(183, 189, 248, 0.15)
 plugins:
@@ -94,7 +94,7 @@ plugins:
   - source: github:quartz-community/latex
     enabled: true
     options:
-      renderEngine: katex
+      renderEngine: mathjax
     order: 80
   - source: github:quartz-community/citations
     enabled: false
