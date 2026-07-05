@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: 📦 haribo's chem notes,
+  pageTitle: 📦 haribo's chem notes
   pageTitleSuffix: " | haribo's chem notes"
   enableSPA: true
   enablePopovers: true
@@ -265,7 +265,7 @@ plugins:
       subdir: plugin
     enabled: true
     options:
-      theme: default
+      theme: catppuccin
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
